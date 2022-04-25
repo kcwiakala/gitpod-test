@@ -15,3 +15,6 @@ RUN sudo install-packages openjdk-8-jdk \
  && curl -fsSL https://dlcdn.apache.org/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz | tar xz
 ENV SPARK_HOME=$HOME/spark/spark-3.1.3-bin-hadoop3.2
 ENV PYTHONPATH=$HOME/spark/spark-3.1.3-bin-hadoop3.2/python/pyspark
+
+# R libraries
+RUN sudo R -e "install.packages(('remotest', 'renv', 'languageserver', 'sparklyr', 'data.table', 'httpgd'))"
