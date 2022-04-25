@@ -14,7 +14,6 @@ summary(m1)
 # We see also in the residual plot that the data does not show a linear pattern.
 plot(x, resid(m1))
 
-
 # Now, let us transform the data to a new form.
 # We calculate the square root of y
 y1 <- sqrt(y)
