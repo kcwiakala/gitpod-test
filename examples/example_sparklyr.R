@@ -17,7 +17,7 @@ iris_summary <- iris_tbl %>%
 ggplot(iris_summary, aes(Sepal_Width, Sepal_Length, color = Species)) +
   geom_line(size = 1.2) +
   geom_errorbar(aes(ymin = Sepal_Length - stdev, ymax = Sepal_Length + stdev), width = 0.05) +
-  geom_text(aes(label = count), vjust = -0.2, hjust = 1.2, color = "black") +
+  geom_text(aes(label = count), vjust = -0.2, hjust = 1.2, color = "#000000") +
   theme(legend.position = "top")
 
 fit1 <- ml_linear_regression(

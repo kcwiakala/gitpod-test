@@ -1,0 +1,1 @@
+options(radian.complete_while_typing = FALSE)

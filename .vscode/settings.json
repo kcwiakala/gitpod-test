@@ -1,7 +1,6 @@
 {
     "r.bracketedPaste": true,
     "r.rterm.linux": "/home/gitpod/.pyenv/shims/radian",
-    "r.lsp.path": "/usr/bin/R",
     "r.lsp.debug": true,
     "r.lsp.diagnostics": true,
     "r.rterm.option": [
