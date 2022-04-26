@@ -17,4 +17,5 @@ ENV SPARK_HOME=$HOME/spark/spark-3.1.3-bin-hadoop3.2
 ENV PYTHONPATH=$HOME/spark/spark-3.1.3-bin-hadoop3.2/python/pyspark
 
 # R libraries
-RUN sudo R -e "install.packages(c('remotes', 'renv', 'devtools', 'languageserver', 'sparklyr', 'data.table', 'httpgd', 'ggplot2'))"
+RUN sudo R -e "install.packages('devtools')" \
+ && sudo R -e "install.packages(c('remotes', 'renv', 'languageserver', 'sparklyr', 'data.table', 'httpgd', 'ggplot2'))"
